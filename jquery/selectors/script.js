@@ -1,22 +1,24 @@
-// function func1() {
-//   $("#img1").fadeToggle();
-// }
+// $("selectors").action()
 
-// $("*").css("background-color", "black");
 
-// $("*").css({
-//   "background-color": "black",
-//   color: "white",
-// });
 
-// $(selector).action()
+// document.getElementById("")
 
-$("div>p").css("color", "red");
 
-$("ul>li").css("color", "blue");
 
-$(".class").hide();
+$("document").ready(() => {
+  //   $("*").css({ "background-color": "black", color: "white" });
 
-$("#id").css("font-size", "30px");
+  $("div>p").css("color", "orange");
 
-$("[href]").css("color", "orange");
+  $(".para>p").css("color", "red");
+
+  $("ul>li").css("color", "green");
+
+  $("[href]").css({
+    color: "blue",
+    "text-decoration": "none",
+  });
+
+  $("h1").css("color", "cadetBlue");
+});

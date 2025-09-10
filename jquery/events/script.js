@@ -1,46 +1,77 @@
-// i will attached this function onclick
-
 // function handleClick() {
-//   // using vanilla js
-//   //   document.getElementById("img").style.width = "600px";
-
-//   // now using jquery
-
-//   $("#img").css("width", "600px");
+//   document.getElementById("img").style.width = "600px";
 // }
 
-// click event
-// $("#btn").click(function () {
-//   $("#img").css("width", "600px");
+// $("document").ready(() => {
+//   $("#btn").click(() => {
+//     $("#img").css({
+//       width: "600px",
+//       height: "600px",
+//     });
+//   });
 // });
 
-// when html load first then this will load
-// $(document).ready(
-//   $("#btn").click(function () {
-//     $("#img").css("width", "600px");
-//   })
-// );
+// using different method
 
-// double click event
-
-// function handleDoubleClick() {
-//   $("#img").css("width", "600px");
+// function handleClick() {
+//   $("#img").css({
+//     width: "600px",
+//     height: "600px",
+//   });
 // }
 
-// $("#btn").dblclick(handleDoubleClick);
+// $("document").ready(() => {
+//   $("#btn").click(handleClick);
+// });
 
-// or you can use like this
+// double click
+// $("document").ready(() => {
+//   $("#btn").dblclick(() => {
+//     $("#img").css({
+//       width: "600px",
+//       height: "600px",
+//     });
+//   });
+// });
 
-$("#btn").dblclick(function handleDoubleClick() {
-  $("#img").css("width", "600px");
+// mouse event
+
+// $("document").ready(() => {
+//   $("#img").mouseenter(() => {
+//     $("#img").css({
+//       width: "600px",
+//       height: "600px",
+//     });
+//   });
+// });
+
+// on mouse leave
+
+// $("document").ready(() => {
+//   $("#img").mouseleave(() => {
+//     $("#img").css({
+//       width: "300px",
+//       height: "300px",
+//     });
+//   });
+// });
+
+// keys event
+
+$("document").ready(() => {
+  $("#btn").keyup(() => {
+    $("#img").css({
+      width: "600px",
+      height: "600px",
+    });
+  });
 });
 
-// using mouseEnter and mouseLeave event (hover effect)
-
-$("#img").mouseenter(function () {
-  $("#img").css("width", "600px");
-});
-
-$("#img").mouseleave(function () {
-  $("#img").css("width", "300px");
+$("document").ready(() => {
+  $("#btn").keydown(() => {
+    $("#img").css({
+      width: "600px",
+      height: "600px",
+    });
+  });
 });
