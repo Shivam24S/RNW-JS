@@ -49,7 +49,7 @@ $("#slideDown").click(() => {
 // toggle effect
 
 $("#slideToggle").click(() => {
-  $("#img").slideToggle(1000);
+  $("#img").slideToggle(5000);
 });
 
 $("#stop").click(() => {
