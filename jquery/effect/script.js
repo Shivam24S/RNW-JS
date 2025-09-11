@@ -1,57 +1,43 @@
-// hide effect
+$("document").ready(() => {
+  $("#hide").click(() => {
+    $("#img").hide();
+  });
 
-$("#hide").click(() => {
-  $("#img").hide();
-});
+  $("#show").click(() => {
+    $("#img").show();
+  });
 
-// show effect
+  $("#toggle").click(() => {
+    $("#img").toggle();
+  });
 
-$("#show").click(() => {
-  $("#img").show();
-});
+  // fade effects
 
-// toggle effect
+  $("#fadeIn").click(() => {
+    $("#img").fadeIn(2000);
+  });
 
-$("#toggle").click(() => {
-  $("#img").toggle(2000);
-});
+  $("#fadeOut").click(() => {
+    $("#img").fadeOut(2000);
+  });
 
-// fades effect
+  $("#fadeToggle").click(() => {
+    $("#img").fadeToggle(2000);
+  });
 
-$("#fadeIn").click(() => {
-  $("#img").fadeIn(1000);
-});
+  $("#slideUp").click(() => {
+    $("#img").slideUp(2000);
+  });
 
-// show effect
+  $("#slideDown").click(() => {
+    $("#img").slideDown(2000);
+  });
 
-$("#fadeOut").click(() => {
-  $("#img").fadeOut(1000);
-});
+  $("#slideToggle").click(() => {
+    $("#img").slideToggle(2000);
+  });
 
-// toggle effect
-
-$("#fadeToggle").click(() => {
-  $("#img").fadeToggle(1000);
-});
-
-// slides effect
-
-$("#slideUp").click(() => {
-  $("#img").slideUp(1000);
-});
-
-// show effect
-
-$("#slideDown").click(() => {
-  $("#img").slideDown(1000);
-});
-
-// toggle effect
-
-$("#slideToggle").click(() => {
-  $("#img").slideToggle(5000);
-});
-
-$("#stop").click(() => {
-  $("#img").stop();
+  $("#stop").click(() => {
+    $("#img").stop(2000);
+  });
 });
