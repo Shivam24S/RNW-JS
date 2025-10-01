@@ -1,10 +1,8 @@
 // $("selectors").action()
 
-
-
 // document.getElementById("")
 
-
+document.getElementById;
 
 $("document").ready(() => {
   //   $("*").css({ "background-color": "black", color: "white" });
