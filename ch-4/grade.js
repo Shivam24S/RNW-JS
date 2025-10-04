@@ -1,15 +1,17 @@
-let unit = 300;
+let marks = 85;
 
-let totalBill;
+let grade = "";
 
-if (unit <= 100) {
-  totalBill = unit * 10;
-} else if (unit <= 200) {
-  totalBill = 100 * 10 + (unit - 100) * 15;
-} else if (unit > 200) {
-  totalBill = 100 * 10 + 100 * 15 + (unit - 200) * 20;
+if (marks >= 90) {
+  grade = "A+";
+} else if (marks >= 75) {
+  grade = "B+";
+} else if (marks >= 60) {
+  grade = "C+";
+} else if (marks >= 35) {
+  grade = "D+";
 } else {
-  console.log("please enter valid value");
+  grade = "F";
 }
 
-console.log(totalBill);
+console.log(grade);
