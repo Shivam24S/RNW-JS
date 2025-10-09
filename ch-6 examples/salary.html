@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="basicSalary">BasicSalary</label>
+      <input
+        type="number"
+        placeholder="enter your basic salary"
+        id="basicSalary"
+      />
+      <br />
+      <label for="hra">HRA</label>
+      <input type="number" placeholder="enter your HRA%" id="hra" />
+      <br />
+      <label for="da">DA</label>
+      <input type="number" placeholder="enter your DA%" id="da" />
+      <br />
+      <label for="ta">TA</label>
+      <input type="number" placeholder="enter your TA%" id="ta" />
+      <br />
+      <button type="submit">submit</button>
+
+      <br />
+    </form>
+
+    <div id="grossSalary"></div>
+    <script src="./salary.js"></script>
+  </body>
+</html>
