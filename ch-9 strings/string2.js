@@ -55,7 +55,9 @@ console.log("starts with", alphabet.startsWith("z"));
 
 console.log("substring", alphabet.substring(3));
 
-console.log("substring", alphabet.substring(2, 5));
+console.log("substring ex", alphabet.substring(2, 5));
+
+console.log("substring ex", alphabet.substring(5, 2));
 
 console.log("substring", alphabet.substring(-1));
 
@@ -70,3 +72,13 @@ alphabet = "ABCDEFGHI";
 console.log("lower case", alphabet.toLowerCase());
 
 // trim
+
+alphabet = "               abcdefghi                  ";
+
+console.log("length of alphabet", alphabet.length);
+
+console.log("both sides", alphabet.trim().length);
+
+console.log("only starting", alphabet.trimStart().length);
+
+console.log("only ending", alphabet.trimEnd().length);
