@@ -33,12 +33,14 @@ console.log(number);
 // splice method will remove and replace an original array
 
 // not removing any element
-number.splice(4, 0, 11, 12);
+number.splice(4, 1, 11, 12);
+
+console.log("splice 1", number);
 
 // removing 2 elements
 number.splice(4, 2, 11, 12);
 
-console.log(number);
+console.log("splice 2", number);
 
 number.forEach((num) => {
   console.log(num * 2);
