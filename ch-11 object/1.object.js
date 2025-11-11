@@ -85,3 +85,28 @@ console.log("student email", student3.email);
 
 console.log(student3);
 console.log(student4);
+
+const shoppingList = {
+  name: "grocery",
+  total: 5000,
+  items: 10,
+};
+
+console.log("shopping list", shoppingList);
+
+// now deleting the property of object
+
+delete shoppingList.items;
+
+console.log("shopping list", shoppingList);
+
+// hasOwnProperty
+
+// const isItemAvailable = shoppingList.hasOwnProperty("items");
+const isItemAvailable = shoppingList.hasOwnProperty("total");
+
+console.log("is item Available", isItemAvailable);
+
+for (let key in shoppingList) {
+  console.log("accessing shopping list", shoppingList[key]);
+}
