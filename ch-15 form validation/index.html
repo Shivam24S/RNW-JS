@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form onsubmit="return formValidation()">
+      <label for="name">name</label>
+      <input type="text" placeholder="name" id="name" required />
+      <br />
+      <label for="email">email</label>
+      <input type="email" placeholder="email" id="email" required />
+      <br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        placeholder="password"
+        id="password"
+        required
+        minlength="6"
+      />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+
+    <br />
+    <br />
+
+    <p id="error" style="color: red"></p>
+
+    <script>
+      const formValidation = () => {
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const password = document.querySelector("#password").value;
+
+        if (name === "") {
+          document.getElementById("error").textContent = "name is required";
+          return false;
+        }
+
+        if (!email.includes("@")) {
+          document.getElementById("error").textContent = "invalid email";
+          return false;
+        }
+
+        if (password.length < 6) {
+          document.getElementById("error").textContent =
+            "password length must be greater than 6";
+
+          return false;
+        }
+
+        alert("form submitted");
+      };
+    </script>
+  </body>
+</html>
