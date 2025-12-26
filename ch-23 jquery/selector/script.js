@@ -1,29 +1,20 @@
-
-
 // document.getElementById
-
-
 
 // $("selector").action()
 
+$(document).ready(() => {
+  $("p").css("color", "red");
 
+  $("div>p").css("color", "green");
 
-$(document).ready(()=>{
+  $(".para-3").css("color", "blue");
 
-    $("p").css("color","red")
+  $("#para-4").css("color", "pink");
 
+  $("[href]").css({
+    color: "green",
+    textDecoration: "none",
+  });
 
-    $("div>p").css("color","green")
-
-    $(".para-3").css("color","blue")
-
-    $("#para-4").css("color","pink")
-
-    $("[href]").css("color","orange","text-style","none")
-
-
-    $("ul>li").css("color","brown")
-
-
-
-})
+  $("ul>li").css("color", "brown");
+});
