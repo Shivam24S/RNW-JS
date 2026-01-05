@@ -129,7 +129,7 @@ products.forEach((p) => {
     `;
 });
 
-const cartItems = JSON.parse(localStorage.getItem("cartData")) ||[]
+const cartItems = JSON.parse(localStorage.getItem("cartData")) || [];
 
 const addItem = (id) => {
   const item = cartItems.find((prod) => prod.id === id);
@@ -149,8 +149,35 @@ const addItem = (id) => {
 
 console.log("cartItems", cartItems);
 
+const showCart = () => {
+  const productList = document.getElementById("product-list");
 
+  const modal = new bootstrap.Modal(productList);
 
+  modal.show();
+  productData();
+};
 
+function productData() {
+  const productData = document.getElementById("product-data");
 
+  productData.innerHTML = "";
 
+  cartItems.forEach((p) => {
+    productData.innerHTML += `
+
+    <tr>
+    <td>${p.name}</td>
+    <td>${p.price}</td>
+    <td>
+    <button class="btn btn-secondary btn-sm" >-</button>
+    <p>${p.qty}</p>
+    <button class="btn btn-secondary btn-sm" >+</button>
+    
+    </td>
+    <td> ₹ ${p.qty * p.price}</td>
+    <td><button class="btn btn-sm btn-danger" >Remove</button></td>
+    </tr>
+    `;
+  });
+}
